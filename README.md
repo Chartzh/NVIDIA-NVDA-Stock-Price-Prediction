@@ -1,49 +1,63 @@
 # NVIDIA (NVDA) Stock Price Prediction
-Proyek ini bertujuan untuk memprediksi harga saham NVIDIA (NVDA) menggunakan teknik Machine Learning. Dengan memanfaatkan data historis pasar, model ini berusaha menangkap tren dan pola untuk memberikan estimasi harga di masa depan.
 
-## 📌 Gambaran Proyek
-NVIDIA merupakan salah satu pemain utama dalam industri semikonduktor dan AI, yang membuat harga sahamnya sangat dinamis. Proyek ini mencakup alur kerja data science lengkap mulai dari pengambilan data, pra-pemrosesan, analisis data eksploratif (EDA), hingga implementasi model prediksi.
+This project aims to predict NVIDIA (NVDA) stock prices using Machine Learning. By leveraging historical market data, the model attempts to capture trends and patterns to provide future price estimations.
 
-## 🚀 Fitur Utama
-* **Data Acquisition**: Mengambil data terbaru secara otomatis menggunakan pustaka `yfinance`.
-* **Feature Engineering**: Implementasi indikator teknikal seperti Moving Averages (MA) untuk memperkuat akurasi model.
-* **Data Visualization**: Visualisasi tren harga historis dan perbandingan antara nilai aktual vs hasil prediksi.
-* **Machine Learning Model**: (Sebutkan model yang Anda gunakan, contoh: *Linear Regression* atau *LSTM*) untuk melakukan forecasting.
+## 📌 Project Overview
 
-## 🛠️ Teknologi yang Digunakan
-* **Bahasa**: Python
+NVIDIA is a leading player in the semiconductor and AI industry, making its stock price highly dynamic. This project covers the full data science workflow: data acquisition, preprocessing, Exploratory Data Analysis (EDA), and model implementation.
+
+## 🚀 Key Features
+
+* **Data Acquisition**: Automatically fetches the latest stock data using the `yfinance` library.
+* **Feature Engineering**: Implementation of technical indicators like Moving Averages (MA) and lag features to improve model accuracy.
+* **Data Visualization**: Visualizing historical price trends and comparing Actual vs. Predicted values.
+* **Machine Learning Model**: Built using **Linear Regression** to forecast the closing price.
+
+## 🛠️ Technologies Used
+
+* **Language**: Python
 * **Libraries**:
 * `Pandas` & `NumPy` (Data Manipulation)
 * `Matplotlib` & `Seaborn` (Data Visualization)
 * `Scikit-Learn` (Machine Learning)
 * `yfinance` (Financial Data Source)
+* `Scipy` (Statistical Analysis)
 
 
 * **Tool**: Google Colab / Jupyter Notebook
 
-## 📊 Hasil dan Evaluasi
-Model dievaluasi menggunakan metrik performa seperti:
-* **Mean Absolute Error (MAE)**
-* **Root Mean Squared Error (RMSE)**
-* **R-squared (R²)**
+## 📊 Results and Evaluation
 
-## 📂 Struktur Repositori
-* `NVIDIA_Stock_Prediction.ipynb`: Notebook utama dengan kode lengkap.
-* `README.md`: Penjelasan mengenai proyek.
-* `requirements.txt`: Daftar pustaka yang diperlukan.
+The model's performance is evaluated using standard regression metrics:
 
-## ⚙️ Cara Menjalankan
+* **Root Mean Squared Error (RMSE): $2.16**
+* **Mean Absolute Error (MAE): $1.34**
+* **R-squared (R²): 0.9966**
+<img width="1005" height="547" alt="download" src="https://github.com/user-attachments/assets/9cc64c6a-35fa-4a76-9694-f1c5bd40dac3" />
 
-1. Clone repositori ini:
+
+
+## 📂 Repository Structure
+
+* `Prediksi_Close_Price_Nvidia.ipynb`: Main notebook with the complete code and analysis.
+* `README.md`: Project documentation.
+* `requirements.txt`: List of necessary Python libraries.
+
+## ⚙️ How to Run
+
+1. **Clone this repository**:
 ```bash
-git clone https://github.com/username-anda/nama-repo.git
+git clone https://github.com/Chartzh/NVIDIA-NVDA-Stock-Price-Prediction.git
 
 ```
 
-2. Instal dependensi:
+
+2. **Install dependencies**:
 ```bash
 pip install -r requirements.txt
 
 ```
 
-3. Buka file `.ipynb` di Jupyter Notebook atau upload kembali ke Google Colab.
+
+3. **Run the Notebook**:
+Open the `.ipynb` file in Jupyter Notebook or upload it to Google Colab.
